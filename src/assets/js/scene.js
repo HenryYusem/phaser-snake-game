@@ -1,4 +1,4 @@
-import { Scene, Math } from 'Phaser';
+import { Scene, Math } from 'phaser';
 import Food from './food';
 import Snake from './snake';
 

@@ -1,5 +1,5 @@
 
-import { Game } from 'Phaser';
+import { Game } from 'phaser';
 import SnakeScene from './scene';
 
 const gameConfig = {
@@ -12,3 +12,4 @@ const gameConfig = {
 };
 
 new Game(gameConfig);
+

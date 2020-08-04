@@ -1,4 +1,4 @@
-import { Geom, Math, Actions } from 'Phaser';
+import { Geom, Math, Actions } from 'phaser';
 
 //  Direction consts
 const UP = 0;

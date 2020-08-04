@@ -49,7 +49,7 @@ module.exports = {
     stats: 'errors-only',
     open: true,
     port: 12001,
-    compress: true
+    compress: true,
   },
   devtool: 'inline-source-map'
 }

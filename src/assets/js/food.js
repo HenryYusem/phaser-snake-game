@@ -1,4 +1,4 @@
-import { GameObjects } from 'Phaser';
+import { GameObjects } from 'phaser';
 
 export default class Food extends GameObjects.Image {
 
