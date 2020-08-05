@@ -9,12 +9,6 @@ export default class Food extends GameObjects.Image {
     this.setPosition(x * 16, y * 16);
     this.setOrigin(0);
 
-    this.total = 0;
-
     scene.children.add(this);
-  }
-
-  eat() {
-    this.total++;
   }
 }

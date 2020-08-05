@@ -93,10 +93,6 @@ export default class SnakeScene extends Scene {
       var pos = Math.RND.pick(validLocations);
       //  And place it
       this.food.setPosition(pos.x * 16, pos.y * 16);
-
-      return true;
-    } else {
-       return false;
     }
   }
 }

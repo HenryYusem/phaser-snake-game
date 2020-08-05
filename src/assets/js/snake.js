@@ -113,12 +113,6 @@ export default class Snake {
   collideWithFood(food) {
     if (this.head.x === food.x && this.head.y === food.y) {
       this.grow();
-      food.eat();
-
-      //  For every 5 items of food eaten we'll increase the snake speed a little
-      if (this.speed > 20 && food.total % 5 === 0) {
-        this.speed -= 5;
-      }
 
       return true;
     } else {
