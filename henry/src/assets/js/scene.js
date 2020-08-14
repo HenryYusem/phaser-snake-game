@@ -28,7 +28,24 @@ export default class SnakeScene extends Scene {
    * autonomousPeriodic and teleopPeriodic functions in robot code
    */
   update(time, delta) {
-   
+
+    if (this.cursors.up.isDown) {
+       this.snake.moveUp()
+        console.log('up');
+   }
+   else if (this.cursors.down.isDown) {
+       this.snake.moveDown()
+       console.log('down');
+   }
+   else if (this.cursors.left.isDown) {
+       this.snake.moveLeft()
+       console.log('left');
+   }
+   else if (this.cursors.right.isDown) {
+       this.snake.moveRight()
+       console.log('right');
+   }
+this.snake.update ();
   }
 
 }

@@ -10,7 +10,7 @@ export default class SnakeScene extends Scene {
   preload() {
     // loads images which can be used in sprites
     this.load.image('food', 'assets/media/images/food.png');
-    this.load.image('body', 'assets/media/images/body.png');
+    this.load.image('body', 'assets/media/images/monster.jpg');
   }
 
   /**
