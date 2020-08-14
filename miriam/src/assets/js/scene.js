@@ -39,15 +39,19 @@ export default class SnakeScene extends Scene {
 
       if (this.cursors.up.isDown){
           console.log('up');
+          moveUp();
       }
       else if (this.cursors.down.isDown){
           console.log('down');
+          moveDown();
       }
       else if (this.cursors.left.isDown){
           console.log('left');
+          moveLeft();
       }
       else if (this.cursors.right.isDown){
           console.log('right');
+          moveRight();
       }
     }
 }
