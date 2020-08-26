@@ -45,7 +45,7 @@ export default class SnakeScene extends Scene {
        this.snake.moveRight()
        console.log('right');
    }
-this.snake.update ();
+
   }
 
 }

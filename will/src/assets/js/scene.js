@@ -18,7 +18,7 @@ export default class SnakeScene extends Scene {
    */
   create() {
     this.food = new Food(this, 3, 4);
-    this.snake = new Snake(this, 8, 8);
+    this.snake = new Snake(this, 8, 8, 1);
     //  Create our keyboard controls
     this.cursors = this.input.keyboard.createCursorKeys();
   }
@@ -28,7 +28,16 @@ export default class SnakeScene extends Scene {
    * autonomousPeriodic and teleopPeriodic functions in robot code
    */
   update(time, delta) {
-   
+
+    let STATE = "DOWN";
+
+      if (STATE == "DOWN"){
+          new Snake(this, this.snake.head.x, this.snake.head.y + 1, 1)
+      }
+    console.log('is down pressed:', this.cursors.down.isDown);
+    console.log('is up pressed:', this.cursors.up.isDown);
+    console.log('is left pressed:', this.cursors.left.isDown);
+    console.log('is right pressed:', this.cursors.right.isDown);
   }
 
 }

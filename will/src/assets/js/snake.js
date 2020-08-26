@@ -2,7 +2,7 @@ import { Geom, Math, Actions } from 'phaser';
 
 export default class Snake {
 
-  constructor (scene, x, y) {
+  constructor (scene, x, y, life) {
     this.headPosition = new Geom.Point(x, y);
     this.body = scene.add.group();
     this.head = this.body.create(x * 16, y * 16, 'body');
